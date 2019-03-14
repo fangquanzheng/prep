@@ -2,10 +2,49 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Making Something Great</title>
+		<script src = "http://d3js.org/d3.v3.min.js"></script>
+		<style type="text/css">
+				body{
+					margin:0;
+					font-family:verdana;
+					font-size:12px;
+					}
+					svg{
+						display:block;
+						margin-left:10%;
+					}
+				svg.1:hover{
+					opacity:0.5;
+				}
+				svg.2:hover{
+					opacity:0.5;
+				}		
+				svg.3:hover{		
+					opacity:0.5;
+				}	
+			</style>
 	</head>
 	<body>
-	<h1>Why is visualization effective?</h1>
-	<h1>What are the more effective ways to encode data for perceptual tasks?</h1>
-	<h1>What are trade-off that Cairo asks us to consider when building a visualization?</h1>
+	<svg width = "1000" height = "900" class = "1">	
+	<text font-family: verdana font-size ="25" fill = "Pink" x = "270" y = "300">Why is visualization effective?</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:red; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="50" fill = "lightpink" x= "150" y = "800"> </text>
+		</g>
+	</svg>
+	<svg width = "1000" height = "900" class = "2">
+	<text font-family: verdana font-size ="25" fill = "Purple"  x = "40"y = "300">What are the more effective ways to encode data for perceptual tasks?</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:purple; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="50" fill = "lavender" x= "320" y = "800"> </text>
+		</g>
+	</svg>
+	<svg width = "1000" height = "900" class = "3">
+	<text font-family: verdana font-size ="25" fill = "Green" y = "300">What are trade-off that Cairo asks us to consider when building a visualization?</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:green; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="50" fill = "darkseagreen" x= "170" y = "800">  </text>
+		</g>
+	</svg>
 	</body>
 </html>
