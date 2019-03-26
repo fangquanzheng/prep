@@ -6,17 +6,28 @@
 		<style>
 		svg{
 				display: block;
-				margin-left: 10%;
-				margin-bottom: 50px
+				margin-bottom: 30px
 			}
-		svg.penguin:hover{
+		svg.penguin{
+			margin-left: 10%;
 			border: solid;
 		}
-		svg.chart:hover{
+		svg.chart{
 			border: solid;
+			margin-left: 10%;
+			}
+		svg.explain{
+			margin-left: 10%;
+/*			position: absolute;*/
+/*			display: block;*/
+/*			top: 800px;*/
+/*			left: 0;*/
 		}
 		h2{
 			margin-left: 300px;
+		}
+		h3{
+			margin-left: 350px;
 		}
 		div.penguin{
 			position: absolute;
@@ -24,18 +35,12 @@
 			top: 150px;
 			left: 750px
 		}
-		div.explain{
-			position: absolute;
-			display: block;
-			top: 600px;
-			left: 0px;
-		}
 		</style>
 		</head>
 		<body>
 		<script type="text/javascript">
 		var width = 800;
-		var height = 500;
+		var height = 400;
 		var svg = d3.select("body")
 				    .selectAll("svg")
 				    .attr("width",width)
@@ -49,19 +54,20 @@
 		<svg width = "600" height = "400" class = "chart">
 			<image href = "penguinChart.jpeg" x = "30px" y = "0" height = "500px" width = "550px"/>
 		</svg>	
-		<div class = "penguin">
-			<h3>Extra work</h3>
-			<ol>
-				<li>Add number label on each bar</li>
-				<li>Minimize the amount of code by using <b>forEach function</b></li>
-			</ol>
-		<div class = "explain">
 		<h3>Explaination</h3>
-		<ol>
-			<li>Add number label on each bar</li>
-			<li>Minimize the amount of code by using <b>forEach function</b></li>
-		</ol>		
-		</div>
-		</div>
+		<svg width = "600" height = "400" class = "explain">
+		<text x = "5px" y = "20px">The histograms, pie chart and table display Bookworm's grades compared to the full scores</text>
+		<text x = "5px" y = "40px">and the percentage of each score atrribution of the total score. The histogram was generated</text>
+		<text x = "5px" y = "60px">by adding the score of the final, homework, quizes and test on each day, giving the sum of</text> 
+		<text x = "5px" y = "80px">the each score. From the histograms the studetn's grades can be clearly compared with the</text> 
+		<text x = "5px" y = "100px"> total score and therefore know which score is not good enough and which one is his strongiest.</text>
+		<text x = "5px" y = "120px">For the pie chart, it aims to show the percentage of each item to the student's final score.</text>	
+		</svg>
+		<div class = "penguin">
+			<ol>
+				<li>Histograms</li>
+				<li>Pie Chart</li>
+				<li>Table</li>
+			</ol>
 		</body>
 		</html>
