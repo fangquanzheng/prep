@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Making Something Great</title>
+		<script src = "http://d3js.org/d3.v5.min.js"></script>
+		<style type="text/css">
+				body{
+					margin:0;
+					font-family:verdana;
+					font-size:12px;
+					}
+					svg{
+						display:block;
+						margin-left:10%;
+					}
+				svg.1:hover{
+					opacity:0.5;
+					.selectAll("text")
+					.data(nodes)
+					.enter()
+					.append("text")				
+				}
+				svg.2:hover{
+					opacity:0.5;
+				}		
+				svg.3:hover{		
+					opacity:0.5;
+				}	
+	</style>
+	</head>
+	<body>
+	<svg width = "1000" height = "900" class = "1">	
+	<text font-family: verdana font-size ="25" fill = "Pink" x = "350" y = "300">Moving Average Curve</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:red; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" ></rect>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "450">
+		One of the strategies mentioned in the Chapter 8 is moving average curve. It divides the time series into small </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "500">
+		chunks of months and calculate the average of each chunk. By comparing raw scores and expected ones, it </text> 
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "550">
+		emphasizes the difference between them.  </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "600">  </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "650">		 possess the data and get a better conclusion about it. </text>
+		</g>
+	</svg>
+	<svg width = "1000" height = "900" class = "2">
+	<text font-family: verdana font-size ="25" fill = "Purple"  x = "370"y = "300">Zero-based index</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:purple; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "450"> 
+		Another better representation of the relative change is zero-based index.</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "500">		the hierarchy of elementary perceptual tasks. If you wish to create a successful cahrt, you need to construct it </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "550">
+		based on elementary tasks "as high in the hierarchy as possible." The methods of encoding on the top half of the </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "600">		scale are appropriate when the goal is to enable accurate judgements. However, the buttom half of the scale aims</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "650">		to reveal the general patterns.</text>
+		</g>
+	</svg>
+	<svg width = "1000" height = "900" class = "3">
+	<text font-family: verdana font-size ="25" fill = "Green" y = "300">What are trade-off that Cairo asks us to consider when building a visualization?</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:green; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "450">  
+		Sometimes making graphs have to sacrifice a bit of clarity if the payoff in the form of allure is great. Different </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "500">graphs have different funtions and the author uses three types of graph in order to illustrate their features  </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "550">		and advantages. Even though Cairo don't like radar chart, he says it still to be used when it is the best way </text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "600">			to interpret the data.</text>
+		</g>
+	</svg>
+	</body>
+</html>
