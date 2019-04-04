@@ -1,1 +1,67 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Force Diagrams</title>
+		<script src = "http://d3js.org/d3.v5.min.js"></script>
+		<style type="text/css">
+				body{
+					margin:0;
+					font-family:verdana;
+					font-size:12px;
+					}
+					svg{
+						display:block;
+						margin-left:10%;
+					}
+				svg.1:hover{
+					opacity:0.5;
+					.selectAll("text")
+					.data(nodes)
+					.enter()
+					.append("text")				
+				}
+				svg.2:hover{
+					opacity:0.5;
+				}		
+				svg.3:hover{		
+					opacity:0.5;
+				}	
+	</style>
+	</head>
+	<body>
+	<svg width = "1000" height = "900" class = "1">	
+	<text font-family: verdana font-size ="25" fill = "Pink" x = "400" y = "300">Dataset 1</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:red; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" ></rect>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "450">var dataset =  {</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "500">nodes:[ {name: "Adam"}, {name: "Bob"}, {name:"Carrie"}],</text> 
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "550">edges:[{source:0, target:1},{source:0, target:2},{source:0, target:3}]</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "600">};</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "650">The nodes are just name of people. The edges contain two values each: a source ID and a target ID.</text>
+		</g>
+	</svg>
+	<svg width = "1000" height = "900" class = "2">
+	<text font-family: verdana font-size ="25" fill = "Purple"  x = "370"y = "300">Dataset 2: Family</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:purple; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "450">var dataset =  {</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "500">nodes:[ {name: "Judo"}, {name: "Crafty"}, {name:"Penguin"}],</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "550">edges:[{name:"Angle"},{name:"Lex"},{name:"Wizard"}]</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "600">};</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "650">The nodes usually are the peoples and the edges connects parents and children.</text>
+		</g>
+	</svg>
+	<svg width = "1000" height = "900" class = "3">
+	<text font-family: verdana font-size ="25" fill = "Green"x = "330" y = "300">Dataset 3: Transportation</text>
+	<g>
+		<rect x = "35" y = "400" width = "900" height = "300" rx = "20" ry = "20" style = "fill:green; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "450">var dataset =  {</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "500">nodes:[ {place: "X"}, {place: "Y"}, {place:"Z"}],</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "550">nodes:[ {distance: "600km"}, {distance: "10km"}, {distance:"10000km"}],</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "600">};</text>
+		<text font-family: verdana font-size ="15" fill = "black" x= "70" y = "650">The nodes usually are the places and the edges are the distances between two places.</text>
+		</g>
+	</svg>
+	</body>
+</html>
 
