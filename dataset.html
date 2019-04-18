@@ -1,1 +1,67 @@
+<html lang="en" dir="ltr" class="gr__tianruic_github_io"><head>
+    <meta charset="utf-8">
+    <title>More SQL</title>
+    <style media="screen">
+      body{
+        background-color: #EDF0EC;
+      }
+      img{
+        margin-left:10px;
+        display:block;
+      }
+      .ex{
+        width:20%;
+      }
+      .table{
+        width:95%;
+      }
+      div{
+        background: #EDE8E5;
+        margin-bottom:15px;
+        border: 5px solid #4D8E80;
+        border-radius:12px;
+      }
+      h2{
+        margin-left:10px;
+      }
+      h3{
+        margin-left:20px;
+      }
+    </style>
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <h1>SQL inner JOIN </h1>
+    <div class="works">
+      <h2>The JOIN function selects certain data from two data sets.
+      <br>And the <i>inner JOIN function</i> selects all the rows from both data sets when the join condition is meet.</h2>
+      <img src="Join.png" class="ex" alt="INNER JOIN graph">
+    </div>
+    <div class="syntax">
+      <h2>Here are the Syntax for the inner JOIN function below</h2>
+      <h3><code>SELECT column_name(s)
+        <br>FROM table1
+        <br>INNER JOIN table2
+        <br>ON table1.column_name = table2.column_name;</code></h3>
+    </div>
+    <div class="example">
+        <h2>Examples</h2>
+        <h3>Orders Table</h3>
+        <img src="Orders.png" class="table" alt="Orders Table">
+        <h3>Customers Table</h3>
+        <img src="Customers.png" class="table" alt="Customers Table">
+        <h2>Suppose we want to get the data from Orders and Customers with same CustomerID
+        <br>The inner JOIN will be the proper way to do this</h2>
+        <h3><code>SELECT Orders.OrderID, Customers.CustomerName
+          <br>FROM Orders
+          <br>INNER JOIN Customers
+          <br>ON Orders.CustomerID = Customers.CustomerID;</code></h3>
+        <h2>And there are the result below</h2>
+        <img src="inner.png" class="table" alt="inner data">
+        <h2>The inner JOIN will only select the data from Orders Table and Customers Table which they has the same CustomerID
+        <br>In this case, only the data with CustomerID 2.
+        <br>And only the OrderID and CustomerName of this data will be shown from this particular function.</h2>
+    </div>
 
+  
+
+</body><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content"></iframe></div></div><grammarly-card><div></div></grammarly-card><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
